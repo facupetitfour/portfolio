@@ -1,0 +1,64 @@
+---
+import CvModal from "../components/cvModal.astro";
+import Badge from "../components/Badge.astro";
+import IconGithub from "../icons/IconGithub.astro";
+import SocialPill from "../components/SocialPill.astro";
+import IconLinkedIn from "../icons/IconLinkedIn.astro";
+import IconGmail from "../icons/IconGmail.astro";
+---
+
+<section
+	id="AboutMe"
+	class="w-2/3 md:py-44 py-14 mx-auto justify-center flex flex-col gap-10"
+>
+	<div
+		class="flex md:flex-row flex-col items-end gap-x-6 col-span-1 md:col-span-2 gap-6"
+	>
+		<h1 class="lg:text-7xl text-6xl font-bold leading-none">
+			Hola, soy Facundo
+		</h1>
+		<div class="pb-3 self-start md:self-auto">
+			<Badge>Disponible para trabajar</Badge>
+		</div>
+	</div>
+
+	<h2 class="lg:text-5xl md:text-4xl text-4xl font-semibold">
+		Desarrollador <span class="text-teal-400 dark:text-blue-400">FullStack</span
+		>
+	</h2>
+	<p class="lg:text-xl md:text-xl text-lg text-wrap">
+		Más de 2 años de experiencia creando soluciones escalables y centradas en el
+		usuario. Capacidad para diseñar APIs RESTful seguras, implementar interfaces
+		modernas y gestionar ciclos de desarrollo end-to-end. Fuerte enfoque en la
+		entrega de valor, resolución de problemas y colaboración efectiva con
+		equipos y clientes.
+	</p>
+	<div class="flex flex-col lg:flex-row md:flex-row gap-4 h-12">
+		<SocialPill
+			href="https://github.com/facupetitfour"
+			rel="noopener noreferrer"
+			target="_blank"
+		>
+			<IconGithub class="h-6 w-6" />
+			Github
+		</SocialPill>
+		<SocialPill
+			href="https://www.linkedin.com/in/facundo-petitfour/"
+			rel="noopener noreferrer"
+			target="_blank"
+		>
+			<IconLinkedIn class="h-6 w-6" />
+			LinkedIn
+		</SocialPill>
+		<SocialPill
+			href="https://mail.google.com/mail/?view=cm&to=facundopetitfour@gmail.com&su=Consulta%20desde%20Portfolio&body=Hola%20Facundo,"
+			title="Enviar mail a facundopetitfour@gmail.com"
+			rel="noopener noreferrer"
+			target="_blank"
+		>
+			<IconGmail class="size-6" />
+			Mail
+		</SocialPill>
+		<CvModal />
+	</div>
+</section>

@@ -1,9 +1,6 @@
 ---
+import Header from "../components/Header.astro";
 import "../styles/global.css";
-import background from "../assets/backgroundTest1.svg";
-import backgroundLigth from "../assets/backgroundLigth.svg";
-import backgroundDark from "../assets/backgroundDark.svg";
-
 ---
 
 <!doctype html>
@@ -13,28 +10,30 @@ import backgroundDark from "../assets/backgroundDark.svg";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Facundo Petitfour - Desarrollador FullStack</title>
+
+		<title>Portfolio Facundo Petitfour - Desarrollador y Programador Web FullStack +2 años de experiencia </title>
 	</head>
-	<body class="bg-gray-100 dark:bg-gray-900">
-		<!-- <img
-			id="backgroundTest1"
-			src={background.src}
-			alt="Background Image"
-			loading="lazy"
-			class="fixed top-0 left-0 w-full h-full object-cover -z-1"
-		/> -->
-
-		<!-- <img src={backgroundLigth.src} alt="backgroundLight" class="fixed top-0 left-0 w-full h-full object-cover -z-10 dark:hidden" />
-		<img src={backgroundDark.src} alt="backgroundDark" class="fixed top-0 left-0 w-full h-full object-cover -z-10 hidden dark:block" /> -->
-
-		<slot/>
+	<body class="bg-slate-50 dark:bg-gray-900 text-black dark:text-gray-100">
+		<Header/>
+		<div
+			class="absolute top-0 z-[-2] h-screen w-screen
+			bg-[#f8fafc]
+			bg-[radial-gradient(ellipse_90%_80%_at_50%_-10%,rgba(45,212,191,0.25),rgba(255,255,255,0))]
+			dark:bg-[#0a0a0a7e] dark:bg-[radial-gradient(ellipse_90%_80%_at_50%_-10%,rgba(96,165,250,0.3)_0%,#0a0a0a7e_100%)]"
+		>
+		</div>
+		<slot />
 	</body>
 </html>
 
-<style>
-	html,
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+	}
 	body {
 		margin: 0;
 		padding: 0;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
