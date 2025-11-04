@@ -1,34 +1,48 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro";
+import ExperienceItem from './ExperienceItem.astro'
 const EXPERIENCIES = [
-	{
-		title: "Dessarrollador fullStack",
-		company: "freelance",
-		period: "2021-Actualidad",
-		description:
-			"Desarrollo de aplicaciones web y móviles personalizadas para clientes de diversos sectores. Implementación de soluciones escalables y centradas en el usuario, utilizando tecnologías modernas como React, Node.js y bases de datos NoSQL. Gestión completa del ciclo de desarrollo, desde la recopilación de requisitos hasta la entrega final y el mantenimiento.",
-	},
-	{
-		title: "Dessarrollador fullStack",
-		company: "freelance",
-		period: "2021-Actualidad",
-		description:
-			"Desarrollo de aplicaciones web y móviles personalizadas para clientes de diversos sectores. Implementación de soluciones escalables y centradas en el usuario, utilizando tecnologías modernas como React, Node.js y bases de datos NoSQL. Gestión completa del ciclo de desarrollo, desde la recopilación de requisitos hasta la entrega final y el mantenimiento.",
-	},
-];
+  {
+    title: 'Software Developer (Freelance)',
+    company: 'Independiente',
+    period: 'Enero 2022 – Actualidad',
+    description:
+      'Desarrollo integral de aplicaciones web utilizando el stack MERN y Vite, desde la fase de planificación hasta el despliegue en producción. Implementación de autenticación robusta con JWT y desarrollo de APIs RESTful seguras. Colaboración directa con clientes para el levantamiento de requerimientos y entrega de soluciones personalizadas. Optimización de rendimiento en frontends empleando Figma, CSS moderno y diseño responsivo adaptable a múltiples dispositivos.',
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'Innovis Soluciones Tecnológicas',
+    period: 'Noviembre 2022 – Diciembre 2023',
+    description:
+      'Desarrollo de nuevas funcionalidades en proyectos empresariales basados en el stack MERN. Construcción y mantenimiento de APIs RESTful seguras con control de acceso mediante JWT. Implementación de una arquitectura modular y patrones de diseño para asegurar escalabilidad y mantenibilidad. Integración de pruebas automatizadas y colaboración en entornos ágiles orientados a la mejora continua.',
+  },
+  {
+    title: 'Scrum Master & Project Manager',
+    company: 'Innovis Soluciones Tecnológicas',
+    period: 'Abril 2023 – Diciembre 2023',
+    description:
+      'Liderazgo y facilitación de eventos Scrum (daily meetings, sprint planning, reviews y retrospectives). Gestión del product backlog, coordinación de equipos multidisciplinarios y eliminación de impedimentos. Supervisión de la planificación estratégica de proyectos, optimizando la eficiencia y los tiempos de entrega mediante herramientas ágiles como Jira. Promoción de la cultura de mejora continua y la colaboración efectiva entre desarrolladores y stakeholders.',
+  },
+  {
+    title: 'Soporte Técnico IT',
+    company: 'Freelance / Independiente',
+    period: 'Noviembre 2022 – Actualidad',
+    description:
+      'Montaje, instalación y mantenimiento de equipos informáticos. Diagnóstico y limpieza de hardware, actualización de componentes y optimización de rendimiento. Instalación y configuración de sistemas operativos, creación de copias de seguridad y asistencia técnica personalizada para usuarios finales.',
+  },
+]
 ---
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">
-	{
-		EXPERIENCIES.map((experiencie) => (
-			<li class="mb-10 ms-4">
-				<ExperienceItem
-					title={experiencie.title}
-					company={experiencie.company}
-					period={experiencie.period}
-					description={experiencie.description}
-				/>
-			</li>
-		))
-	}
+  {
+    EXPERIENCIES.map(experiencie => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem
+          title={experiencie.title}
+          company={experiencie.company}
+          period={experiencie.period}
+          description={experiencie.description}
+        />
+      </li>
+    ))
+  }
 </ol>

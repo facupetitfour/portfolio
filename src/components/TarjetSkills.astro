@@ -1,0 +1,22 @@
+---
+const { arraySkils, nameTarjet } = Astro.props
+---
+
+<div
+  class="bg-gray-200/10 dark:bg-gray-800/30 rounded-2xl p-8 border border-gray-200/20 dark:border-gray-700/30 transition-all duration-300"
+>
+  <div class="flex items-center gap-4 mb-6">
+    <h3 class="text-2xl font-semibold">{nameTarjet}</h3>
+  </div>
+  <div class="space-y-4">
+    <div class="flex flex-wrap gap-2">
+      {
+        arraySkils.map(skill => (
+          <span class="px-3 py-1 bg-teal-100 dark:bg-blue-900/30 text-teal-800 dark:text-blue-300 rounded-full text-sm font-medium">
+            {skill}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</div>
