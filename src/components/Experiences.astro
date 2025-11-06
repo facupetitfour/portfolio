@@ -2,8 +2,8 @@
 import ExperienceItem from './ExperienceItem.astro'
 const EXPERIENCIES = [
   {
-    title: 'Software Developer (Freelance)',
-    company: 'Independiente',
+    title: 'Software Developer',
+    company: 'Freelance / Independiente',
     period: 'Enero 2022 – Actualidad',
     description:
       'Desarrollo integral de aplicaciones web utilizando el stack MERN y Vite, desde la fase de planificación hasta el despliegue en producción. Implementación de autenticación robusta con JWT y desarrollo de APIs RESTful seguras. Colaboración directa con clientes para el levantamiento de requerimientos y entrega de soluciones personalizadas. Optimización de rendimiento en frontends empleando Figma, CSS moderno y diseño responsivo adaptable a múltiples dispositivos.',
@@ -32,10 +32,10 @@ const EXPERIENCIES = [
 ]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative ml-[2px] border-s border-gray-200 dark:border-gray-700">
   {
     EXPERIENCIES.map(experiencie => (
-      <li class="mb-10 ms-4">
+      <li class="ms-4 mb-10">
         <ExperienceItem
           title={experiencie.title}
           company={experiencie.company}
