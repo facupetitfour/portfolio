@@ -3,28 +3,28 @@ import ThemeButton from './ThemeButton.astro'
 ---
 
 <header
-  class="flex md:sticky md:top-4 justify-between bg-teal-100/60 dark:bg-black/10 w-2/3 items-center rounded-3xl p-3 md:mt-8 mt-4 backdrop-blur-sm mx-auto z-50"
+  class="fixed z-50 mx-auto mt-4 flex w-86 items-center justify-between self-center rounded-3xl bg-teal-100/60 p-3 backdrop-blur-sm md:mt-8 md:w-2/3 dark:bg-black/10"
 >
   <!-- Nombre -->
   <div class="text-lg font-semibold">Facundo Petitfour</div>
   <!-- ThemeButton solo visible en mobile -->
 
   <!-- Navegación desktop -->
-  <div class="gap-10 items-center md:flex">
-    <a href="#about" class="dark:hover:text-blue-500 hover:text-teal-500 transition md:flex hidden"
+  <div class="items-center gap-10 md:flex">
+    <a href="#about" class="hidden transition hover:text-teal-500 md:flex dark:hover:text-blue-500"
       >Sobre mí</a
     >
     <a
       href="#projects"
-      class="dark:hover:text-blue-500 hover:text-teal-500 transition md:flex hidden">Proyectos</a
+      class="hidden transition hover:text-teal-500 md:flex dark:hover:text-blue-500">Proyectos</a
     >
     <a
       href="#experience"
-      class="dark:hover:text-blue-500 hover:text-teal-500 transition md:flex hidden">Experiencia</a
+      class="hidden transition hover:text-teal-500 md:flex dark:hover:text-blue-500">Experiencia</a
     >
     <a
       href="#contact"
-      class="dark:hover:text-blue-500 hover:text-teal-500 transition md:flex hidden">Contacto</a
+      class="hidden transition hover:text-teal-500 md:flex dark:hover:text-blue-500">Contacto</a
     >
     <ThemeButton />
   </div>
@@ -33,7 +33,7 @@ import ThemeButton from './ThemeButton.astro'
 <!-- Menú móvil (si querés usarlo después) -->
 <nav
   id="mobile-menu"
-  class="hidden flex-col items-center gap-4 mt-3 bg-white/20 dark:bg-black/80 rounded-2xl shadow-lg p-5 w-80 mx-auto md:hidden backdrop-blur-md transition-all duration-300"
+  class="mx-auto mt-3 hidden w-80 flex-col items-center gap-4 rounded-2xl bg-white/20 p-5 shadow-lg backdrop-blur-md transition-all duration-300 md:hidden dark:bg-black/80"
 >
   <a href="/about" class="block rounded-md px-3 py-2 text-base">Sobre mí</a>
   <a href="/projects" class="block rounded-md px-3 py-2 text-base">Proyectos</a>

@@ -17,7 +17,7 @@ const PROYECTOS = [
       'Mongoose',
       'Axios',
     ],
-    imagen: ['/Mawys-project/mawys-browser-home-dark.png'],
+    imagen: ['/WineClub-project/logoWineClub.webp'],
     enlace: 'https://wineclub.example.com', // reemplazá con tu enlace real
     repositorio: 'https://github.com/tuusuario/wineclub',
     color: '#B90036',
@@ -27,8 +27,21 @@ const PROYECTOS = [
     nombre: 'Feria Maipu',
     descripcion:
       'E-commerce desarrollado con Next.js orientado a performance y SEO. Incluye catálogo de productos, carrito, pasarela de pagos simulada y panel de administración para gestionar inventario.',
-    tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB'],
-    imagen: ['/images/tiendanext-preview.webp'],
+    tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'SQL', 'Docker'],
+    imagen: [
+      '/Ecommerce-project/logoFeriaMaipu.webp',
+      '/Ecommerce-project/e-commers-admin.webp',
+      '/Ecommerce-project/e-commers-cart-mobile-1.webp',
+      '/Ecommerce-project/e-commers-cart-mobile-2.webp',
+      '/Ecommerce-project/e-commers-cart-mobile-3.webp',
+      '/Ecommerce-project/e-commers-cart-mobile-4.webp',
+      '/Ecommerce-project/e-commers-cart-mobile-5.webp',
+      '/Ecommerce-project/e-commers-cart-mobile.webp',
+      '/Ecommerce-project/e-commers-categorie-mobile.webp',
+      '/Ecommerce-project/e-commers-home-mobile-1.webp',
+      '/Ecommerce-project/e-commers-home-mobile.webp',
+      '/Ecommerce-project/e-commers-order.webp',
+    ],
     enlace: 'https://tiendanext.example.com',
     repositorio: 'https://github.com/tuusuario/tiendanext',
     color: '#111827',
@@ -39,7 +52,18 @@ const PROYECTOS = [
     descripcion:
       'Landing page moderna y responsiva para la marca Mawy’s, enfocada en estética limpia y carga rápida. Incluye animaciones suaves, formulario de contacto y optimización para dispositivos móviles.',
     tecnologias: ['Astro', 'Tailwind CSS', 'JavaScript'],
-    imagen: ['/Mawys-project/mawys-browser-home-dark.png'],
+    imagen: [
+      // '/Mawys-project/mawys-logo.webp',
+      '/Mawys-project/mawys_logo2.webp',
+      '/Mawys-project/mawys-browser-home-dark.webp',
+      '/Mawys-project/mawys-browser-historia-dark.webp',
+      '/Mawys-project/mawys-browser-sabores-dark.webp',
+      '/Mawys-project/mawys-browser-contacto-dark.webp',
+      '/Mawys-project/mawys-browser-home.webp',
+      '/Mawys-project/mawys-browser-historia.webp',
+      '/Mawys-project/mawys-browser-sabores.webp',
+      '/Mawys-project/mawys-browser-contacto.webp',
+    ],
     enlace: 'https://mawys.example.com',
     repositorio: 'https://github.com/tuusuario/mawys-landing',
     color: '#F472B6',
@@ -59,6 +83,7 @@ const PROYECTOS = [
           enlace={proyecto.enlace}
           repositorio={proyecto.repositorio}
           color={proyecto.color}
+          tecnologias={proyecto.tecnologias}
         />
       </div>
     ))

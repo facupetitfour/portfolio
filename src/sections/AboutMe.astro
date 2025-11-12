@@ -5,6 +5,7 @@ import IconGithub from '../icons/IconGithub.astro'
 import SocialPill from '../components/SocialPill.astro'
 import IconLinkedIn from '../icons/IconLinkedIn.astro'
 import IconGmail from '../icons/IconGmail.astro'
+import Pcbackground from '../icons/Pcbackground.astro'
 ---
 
 <h1 class="flex gap-4 text-5xl leading-none font-bold">
@@ -12,8 +13,6 @@ import IconGmail from '../icons/IconGmail.astro'
     >Disponible para trabajar</Badge
   >
 </h1>
-
-<!-- <Badge class="md:hidden self-start">Disponible para trabajar</Badge> -->
 
 <Badge class="flex w-fit md:hidden">Disponible para trabajar</Badge>
 
@@ -26,7 +25,7 @@ import IconGmail from '../icons/IconGmail.astro'
   desarrollo end-to-end. Fuerte enfoque en la entrega de valor, resolución de problemas y
   colaboración efectiva con equipos y clientes.
 </p>
-<div class="flex flex-col gap-4 md:flex-row lg:flex-row">
+<div class="mt-12 flex flex-col gap-4 md:flex-row lg:flex-row">
   <SocialPill href="https://github.com/facupetitfour" rel="noopener noreferrer" target="_blank">
     <IconGithub class="h-4 w-4" />
     Github
@@ -46,7 +45,7 @@ import IconGmail from '../icons/IconGmail.astro'
     target="_blank"
   >
     <IconGmail class="size-4" />
-    Mail
+    <p class="line-clamp-1">Mail</p>
   </SocialPill>
   <CvModal />
 </div>
