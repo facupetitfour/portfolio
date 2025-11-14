@@ -6,6 +6,7 @@ import Experiences from '../sections/Experience.astro'
 import SectionContainer from '../components/SectionContainer.astro'
 import Projects from '../sections/Projects.astro'
 import Header from '../components/Header.astro'
+import Skills from '../sections/Skills.astro'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -18,14 +19,15 @@ import Header from '../components/Header.astro'
     <SectionContainer idSection="about" className="space-y-8 py-10 lg:h-screen lg:py-0">
       <AboutMe />
     </SectionContainer>
-    <!-- <SectionContainer idSection="skills" className="space-y-8 lg:py-10">
-      <Skills />
-    </SectionContainer> -->
+
     <SectionContainer idSection="experience" className="space-y-8 py-10 pl-2">
       <Experiences />
     </SectionContainer>
     <SectionContainer idSection="projects" className="space-y-8 py-10">
       <Projects />
+    </SectionContainer>
+    <SectionContainer idSection="skills" className="space-y-8 py-10">
+      <Skills />
     </SectionContainer>
   </main>
 </Layout>
